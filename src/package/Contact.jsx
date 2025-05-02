@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import { useState } from "react";
-import "../pages/Contact.css";
+import "./Contact.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });

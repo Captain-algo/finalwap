@@ -2,14 +2,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
+import Home from './package/Home';
 import Bmi from './package/Bmi';
 import Bmr from './package/Bmr';
 import Contact from './package/Contact';
-import Tracker from './pages/Tracker';
+import Tracker from './package/Tracker';
 import Calorie from './package/Calorie';
 import Diet from './package/Diet';
-
 import Hamstring from './Backexer/Hamstring';
 import Glutes from './Backexer/Glutes';
 import Lats from './Backexer/Lats';

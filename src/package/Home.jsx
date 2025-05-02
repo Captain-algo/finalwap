@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import Footer from '../package/Footer';
-import '../pages/Home.css';
+import './Home.css';
 import FrontAnatomyChart from '../package/FrontAnatomyChart';
 import BackAnatomyChart from '../package/BackAnatomyChart';
 import { Link } from 'react-router-dom';

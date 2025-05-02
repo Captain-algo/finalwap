@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "../pages/Anatomy.css";
+import "./Anatomy.css";
 import { useNavigate } from "react-router-dom";
 export default function FrontAnatomy() {
   const [selectedPart, setSelectedPart] = useState(null);

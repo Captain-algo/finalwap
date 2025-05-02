@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import '../pages/Home.css';
+import './Home.css';
 const Calorie = () => {
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('');

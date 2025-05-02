@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import ReactSpeedometer from 'react-d3-speedometer';
 import Navbar from './Navbar';
-import '../pages/Home.css';
-import '../pages/Bmi.css';
+import './Home.css';
+import './Bmi.css';
 
 const Bmi = () => {
   const [age, setAge] = useState('');

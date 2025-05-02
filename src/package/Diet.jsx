@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import { Colors } from 'chart.js';
-import '../pages/Diet.css'
+import './Diet.css'
 
 const foods = {
   veg: [

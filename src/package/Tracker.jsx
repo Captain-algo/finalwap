@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '../package/Navbar';
 import { Chart } from 'chart.js/auto';
-import '../pages/Home.css'; 
+import './Home.css'; 
 
 const Tracker = () => {
   const [weightData, setWeightData] = useState(() => {
