@@ -1,0 +1,77 @@
+'use client';
+import React, { useEffect, useState } from 'react';
+
+const Traps = () => {
+  const [trapData, setTrapData] = useState([]);
+
+  useEffect(() => {
+    const fetchTrapData = async () => {
+      const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=1000&offset=0';
+      const options = {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-key': '8b2cbaae0fmsh5c3a9fbc888f9ddp1f3d78jsnd9165537d211',
+          'x-rapidapi-host': 'exercisedb.p.rapidapi.com',
+        },
+      };
+
+      try {
+        const res = await fetch(url, options);
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const data = await res.json();
+
+        if (Array.isArray(data)) {
+          const trapsOnly = data.filter(item =>
+            item.target.toLowerCase().includes('trap') ||
+            item.target.toLowerCase().includes('trapezius')
+          );
+          setTrapData(trapsOnly);
+        } else {
+          console.error('Unexpected response format:', data);
+        }
+      } catch (error) {
+        console.error('Fetch error:', error);
+      }
+    };
+
+    fetchTrapData();
+  }, []);
+
+  return (
+    <div style={{ padding: '40px', maxWidth: '1200px', margin: '0 auto' }}>
+      <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>Trap Exercises</h1>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '30px',
+        }}
+      >
+        {trapData.map(ex => (
+          <div
+            key={ex.id}
+            style={{
+              border: '1px solid #ddd',
+              borderRadius: '10px',
+              padding: '15px',
+              textAlign: 'center',
+              boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+              background: '#fff',
+            }}
+          >
+            <h3 style={{ textTransform: 'capitalize', fontSize: '18px', marginBottom: '10px', color: 'black' }}>
+              {ex.name}
+            </h3>
+            <img
+              src={ex.gifUrl}
+              alt={ex.name}
+              style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Traps;

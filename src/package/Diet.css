@@ -1,0 +1,173 @@
+.diet-container {
+  padding: 32px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.inputs {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.inputs input {
+  padding: 12.8px 19.2px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.macros {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.macro {
+  background: #222;
+  padding: 16px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.food-section {
+  margin-top: 48px;
+}
+
+.food-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.food-card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+}
+
+.food-card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hover-info {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.8);
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.food-card:hover .hover-info {
+  opacity: 1;
+}
+
+.hover-content {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.food-card:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-macros {
+  background: rgba(0,0,0,0.8);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14.4px;
+  color: #fff;
+}
+
+.pin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pin-line {
+  width: 3px;
+  height: 50px;
+  background: #4ef1f1;
+  animation: glow 2s infinite alternate;
+}
+
+.pin-circle {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #4ef1f1;
+  border-radius: 50%;
+  margin-top: -10px;
+  background: transparent;
+  animation: pulse 2s infinite;
+}
+
+.pin-circle.delay1 {
+  animation-delay: 0.5s;
+}
+
+.pin-circle.delay2 {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #4ef1f1;
+  }
+  100% {
+    box-shadow: 0 0 20px #4ef1f1;
+  }
+}
