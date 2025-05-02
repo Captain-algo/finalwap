@@ -99,7 +99,7 @@ nav ul li:hover .menu-dropdown {
 .hero-section {
   position: relative;
   height: 900px;
-  background: #000 url("hero.png") no-repeat center top;
+  background: #000 url("/hero.png") no-repeat center top;
   background-size: contain;
   display: flex;
   justify-content: center;

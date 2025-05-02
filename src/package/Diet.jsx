@@ -5,25 +5,25 @@ import './Diet.css'
 
 const foods = {
   veg: [
-    { name: 'Paneer', protein: 18, carbs: 1.2, fats: 20, img: 'Paneer.png' },
-    { name: 'Lentils', protein: 9, carbs: 20, fats: 0.4, img: 'Lentils.png' },
-    { name: 'Tofu', protein: 8, carbs: 2, fats: 5, img: 'Tofu.png' },
-    { name: 'Soya', protein: 36, carbs: 30, fats: 20, img: 'Soya.png' },
-  { name: 'Greek Yogurt', protein: 10, carbs: 3.6, fats: 0.4, img: 'Yogurt.png' },
-  { name: 'Nuts', protein: 20, carbs: 21, fats: 50, img: 'Nuts.png' },
-  { name: 'Broccoli', protein: 2.8, carbs: 6.6, fats: 0.4, img: 'Broccoli.png' },
-  { name: 'Milk', protein: 3.4, carbs: 5, fats: 3.3, img: 'Milk.png' },
-  { name: 'Oats', protein: 13.2, carbs: 67.7, fats: 6.5, img: 'Oat.png' }
+    { name: 'Paneer', protein: 18, carbs: 1.2, fats: 20, img: '/Paneer.png' },
+    { name: 'Lentils', protein: 9, carbs: 20, fats: 0.4, img: '/Lentils.png' },
+    { name: 'Tofu', protein: 8, carbs: 2, fats: 5, img: '/Tofu.png' },
+    { name: 'Soya', protein: 36, carbs: 30, fats: 20, img: '/Soya.png' },
+  { name: 'Greek Yogurt', protein: 10, carbs: 3.6, fats: 0.4, img: '/Yogurt.png' },
+  { name: 'Nuts', protein: 20, carbs: 21, fats: 50, img: '/Nuts.png' },
+  { name: 'Broccoli', protein: 2.8, carbs: 6.6, fats: 0.4, img: '/Broccoli.png' },
+  { name: 'Milk', protein: 3.4, carbs: 5, fats: 3.3, img: '/Milk.png' },
+  { name: 'Oats', protein: 13.2, carbs: 67.7, fats: 6.5, img: '/Oat.png' }
   ],
   nonVeg: [
-    { name: 'Chicken Breast', protein: 31, carbs: 0, fats: 3.6, img: 'Cb.png' },
-    { name: 'Egg', protein: 13, carbs: 1.1, fats: 11, img: 'Egg.png' },
-    { name: 'Fish', protein: 22, carbs: 0, fats: 5, img: 'Fish.png' },
-    { name: 'Shrimps', protein: 24, carbs: 0.2, fats: 0.3, img: 'Shrimp.png' },
-{ name: 'Lobster', protein: 19, carbs: 0, fats: 0.9, img: 'Lobster.png' },
-{ name: 'Meat', protein: 26, carbs: 0, fats: 15, img: 'Meat.png' },
-{ name: 'Salmon', protein: 20, carbs: 0, fats: 13, img: 'Salmon.png' },
-{ name: 'Pork', protein: 27, carbs: 0, fats: 14, img: 'Pork.png' }
+    { name: 'Chicken Breast', protein: 31, carbs: 0, fats: 3.6, img: '/Cb.png' },
+    { name: 'Egg', protein: 13, carbs: 1.1, fats: 11, img: '/Egg.png' },
+    { name: 'Fish', protein: 22, carbs: 0, fats: 5, img: '/Fish.png' },
+    { name: 'Shrimps', protein: 24, carbs: 0.2, fats: 0.3, img: '/Shrimp.png' },
+{ name: 'Lobster', protein: 19, carbs: 0, fats: 0.9, img: '/Lobster.png' },
+{ name: 'Meat', protein: 26, carbs: 0, fats: 15, img: '/Meat.png' },
+{ name: 'Salmon', protein: 20, carbs: 0, fats: 13, img: '/Salmon.png' },
+{ name: 'Pork', protein: 27, carbs: 0, fats: 14, img: '/Pork.png' }
 
 
 
